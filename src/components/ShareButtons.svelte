@@ -1,7 +1,6 @@
 <script lang="ts">
   import { shareButtons, siteUrl } from "../const";
 
-  // TODO: import site URL from somewhere else
   const encodedSiteUrl = encodeURIComponent(siteUrl);
   const buttons = shareButtons.map((sb) => ({
     ...sb,
