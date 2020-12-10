@@ -3,8 +3,9 @@
 
   export let src: string;
   export let alt: string;
+  export let classes: string = "";
 
   src = apiUrl + src;
 </script>
 
-<img {src} {alt} />
+<img {src} {alt} class={classes} />

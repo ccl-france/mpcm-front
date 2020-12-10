@@ -39,12 +39,37 @@ export interface Home extends CreatedUpdatedInfos {
   manifesto: string;
   mainButton: Link;
   hiw: HowItWorks;
+  supportedBy: SupportedBy;
+  mentionedIn: MentionedIn;
+  seo: Seo;
 }
 
 // Strapi components
 export interface Link {
   href: string;
   text: string;
+}
+
+export interface ImageLink {
+  href: string;
+  image: Image;
+}
+
+export interface Seo {
+  title: string;
+  description: string;
+  keywords: string;
+  image: Image | null;
+}
+
+export interface SupportedBy {
+  text: string;
+  images: Array<Image>;
+}
+
+export interface MentionedIn {
+  text: string;
+  articles: Array<ImageLink>;
 }
 
 export interface HowItWorks {

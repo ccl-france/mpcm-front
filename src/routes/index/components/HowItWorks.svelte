@@ -1,7 +1,7 @@
 <script lang="ts">
-  import Badge from "../../components/Badge.svelte";
-  import Image from "../../components/Image.svelte";
-  import type { HowItWorks } from "../../types";
+  import Badge from "../../../components/Badge.svelte";
+  import Image from "../../../components/Image.svelte";
+  import type { HowItWorks } from "../../../types";
 
   export let hiw: HowItWorks;
 
