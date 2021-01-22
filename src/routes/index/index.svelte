@@ -25,15 +25,22 @@
 </script>
 
 <style>
-  #bg-image {
+  #bg-image.no-webp {
     background-image: url("/background.png");
+    background-repeat: "no-repeat";
+  }
+  #bg-image.has-webp {
+    background-image: url("/background.webp");
     background-repeat: "no-repeat";
   }
 </style>
 
 <Seo seo={home.seo} />
 
-<section class="pt-24 relative mb-64 bg-cover bg-green-900" id="bg-image">
+<!-- TODO: Write WEBP support detection -->
+<section
+  class="pt-24 relative mb-64 bg-cover bg-green-900 has-webp"
+  id="bg-image">
   <div class="relative mx-auto md:pt-32 p-8">
     <h1
       class="text-center text-xl sm:text-2xl md:text-4xl font-bold text-sand-100 leading-none">

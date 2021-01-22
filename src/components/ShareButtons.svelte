@@ -11,6 +11,7 @@
 <style>
   .icon {
     color: #fff;
+    fill: #fff;
     width: 16px;
     height: 16px;
   }

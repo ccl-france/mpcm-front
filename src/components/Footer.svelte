@@ -35,8 +35,8 @@
         </a> -->
       </div>
     </div>
-    <p class="opacity-50 text-center mt-6">
-      &copy; Le meilleur plan climat du monde - 2020
+    <p class="text-sm text-center mt-6">
+      &copy; Le meilleur plan climat du monde - 2021
     </p>
   </div>
 </footer>

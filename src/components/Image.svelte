@@ -5,7 +5,10 @@
   export let alt: string;
   export let classes: string = "";
 
+  export let width: number;
+  export let height: number;
+
   src = apiUrl + src;
 </script>
 
-<img {src} {alt} class={classes} />
+<img {src} {alt} {width} {height} class={classes} loading="lazy" />

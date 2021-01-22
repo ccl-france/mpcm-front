@@ -4,12 +4,13 @@
   "version": "0.0.1",
   "scripts": {
     "dev": "sapper dev",
-    "build": "sapper build --legacy",
-    "export": "sapper export --legacy",
+    "build": "NODE_ENV=production sapper build --legacy",
+    "export": "NODE_ENV=production sapper export --legacy",
     "start": "node __sapper__/build",
     "validate": "svelte-check --ignore src/node_modules/@sapper"
   },
   "dependencies": {
+    "autoprefixer": "^10.2.3",
     "compression": "^1.7.1",
     "polka": "next",
     "sirv": "^1.0.0",
@@ -21,6 +22,7 @@
     "@babel/plugin-transform-runtime": "^7.0.0",
     "@babel/preset-env": "^7.0.0",
     "@babel/runtime": "^7.0.0",
+    "@fullhuman/postcss-purgecss": "^4.0.0",
     "@rollup/plugin-babel": "^5.0.0",
     "@rollup/plugin-commonjs": "^14.0.0",
     "@rollup/plugin-node-resolve": "^8.0.0",
@@ -32,7 +34,7 @@
     "@types/node-fetch": "^2.5.7",
     "@types/polka": "^0.5.1",
     "node-fetch": "^2.6.1",
-    "postcss": "^8.0.9",
+    "postcss": "^8.2.4",
     "postcss-load-config": "^2.1.0",
     "remarkable": "^2.0.1",
     "rollup": "^2.3.4",
@@ -42,7 +44,7 @@
     "svelte": "^3.17.3",
     "svelte-check": "^1.0.46",
     "svelte-preprocess": "^4.3.0",
-    "tailwindcss": "^1.8.10",
+    "tailwindcss": "^2.0.2",
     "tslib": "^2.0.1",
     "typescript": "^4.0.3"
   }

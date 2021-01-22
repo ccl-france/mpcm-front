@@ -9,7 +9,7 @@
 </script>
 
 <svelte:head>
-  <title>{seo.title}</title>
+  <title>{seo.title} · Le meilleur plan climat du monde</title>
   <meta name="description" content={seo.description} />
   <meta name="keywords" content={seo.keywords} />
 

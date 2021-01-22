@@ -8,8 +8,15 @@ const defaultOptions = {
   },
 };
 
+async function fetchApiEndpoint(endpoint: string) {
+  const apiRes = await fetch(apiUrl + endpoint, defaultOptions);
+  return await apiRes.json();
+}
+
 export async function fetchHome() {
-  const apiRes = await fetch(apiUrl + "/home", defaultOptions);
-  const data = await apiRes.json();
-  return data;
+  return await fetchApiEndpoint("/home");
+}
+
+export async function fetchSupporters() {
+  return await fetchApiEndpoint("/supporters");
 }

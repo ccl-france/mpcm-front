@@ -1,8 +1,7 @@
 module.exports = {
   purge: {
     mode: "all",
-    content: ["./**/**/*.html", "./**/**/*.svelte"],
-
+    content: ['./src/**/*.svelte'],
     options: {
       whitelistPatterns: [/svelte-/],
     },

@@ -22,7 +22,11 @@
         <p>{step.text}</p>
       </div>
       <div class="hidden sm:w-1/2 sm:block">
-        <Image src={step.image.url} alt={step.image.alternativeText} />
+        <Image
+          src={step.image.url}
+          alt={step.image.alternativeText}
+          width={312}
+          height={150} />
       </div>
     </div>
   {/each}

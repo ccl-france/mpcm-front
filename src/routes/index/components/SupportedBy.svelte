@@ -12,7 +12,9 @@
         <Image
           src={image.url}
           alt={image.alternativeText}
-          classes="w-40 mx-auto sm:w-full h-16 object-contain" />
+          classes="w-40 mx-auto sm:w-full h-16 object-contain"
+          width={250}
+          height={64} />
       </div>
     {/each}
   </div>

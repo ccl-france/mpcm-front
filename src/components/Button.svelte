@@ -9,7 +9,7 @@
   if (large) classes += " px-8 py-3 text-xl";
 
   if (secondary) classes += " text-green-900 bg-sand-200 hover:bg-sand-300";
-  else classes += " text-white bg-green-500 hover:bg-green-600";
+  else classes += " text-white bg-green-600 hover:bg-green-700";
 </script>
 
 <button class={classes}>
