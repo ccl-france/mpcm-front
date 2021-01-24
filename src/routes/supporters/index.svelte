@@ -27,8 +27,8 @@
 
     <h2 class="text-xl font-bold mb-4">Associations</h2>
     <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
-      {#each supporters.supportedBy.images as image}
-        <Organization {image} />
+      {#each supporters.supportedBy.organizations as org}
+        <Organization href={org.href} image={org.image} />
       {/each}
     </div>
   </div>

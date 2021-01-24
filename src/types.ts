@@ -69,7 +69,7 @@ export interface Seo {
 
 export interface SupportedBy {
   text: string;
-  images: Array<Image>;
+  organizations: Array<ImageLink>;
 }
 
 export interface MentionedIn {

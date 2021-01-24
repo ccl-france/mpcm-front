@@ -2,6 +2,7 @@
   export let large = false;
   export let secondary = false;
   export let classes = "";
+  export let type: "submit" | "button" | "reset" = "submit";
 
   classes +=
     " font-bold py-2 px-4 rounded-sm transition ease-in-out duration-200";
@@ -12,6 +13,6 @@
   else classes += " text-white bg-green-600 hover:bg-green-700";
 </script>
 
-<button class={classes}>
+<button class={classes} {type} on:click>
   <slot />
 </button>
