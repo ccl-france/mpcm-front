@@ -11,7 +11,7 @@
 </script>
 
 <a
-  on:click|preventDefault
+  on:click
   aria-current={isActive ? 'page' : undefined}
   class="{isActive ? 'menu-item-active' : ''} menu-item cursor-pointer m-6 {classes} font-bold"
   href={page[0]}>{page[1]}</a>

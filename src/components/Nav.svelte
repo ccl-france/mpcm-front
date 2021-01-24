@@ -1,12 +1,12 @@
 <script lang="ts">
-  import { goto } from "@sapper/app";
   import { slide } from "svelte/transition";
   import { createEventDispatcher } from "svelte";
-
   import FaBars from "svelte-icons/fa/FaBars.svelte";
 
   import NavElement from "./NavElement.svelte";
   import Button from "./Button.svelte";
+  import OpenModalBtnText from "./OpenModalBtnText.svelte";
+
   import { pages } from "../const";
 
   export let segment: string;
@@ -32,11 +32,7 @@
   }
 
   async function onNavClick(event: MouseEvent) {
-    const { href } = event.target as HTMLLinkElement;
-    await goto(href);
-
     if (!showMobileMenu) return;
-
     showMobileMenu = !showMobileMenu;
   }
 </script>
@@ -47,6 +43,10 @@
     border-bottom-width: 3px;
     border-bottom-color: theme("colors.green.700");
     border-bottom-style: solid;
+  }
+
+  .icon {
+    fill: #fff;
   }
 </style>
 
@@ -80,12 +80,12 @@
     secondary
     classes="hidden lg:block mx-4 ml-auto"
     on:click={onModalClick}>
-    Rejoindre le mouvement
+    <OpenModalBtnText />
   </Button>
 
   <button class="lg:hidden m-6 text-white flex" on:click={onMenuClick}>
     <span class="mr-2">Menu</span>
-    <span class="w-6 h-6"><FaBars /></span>
+    <span class="w-6 h-6 icon"><FaBars /></span>
   </button>
 </nav>
 
@@ -108,7 +108,7 @@
       <li
         on:click={onModalClick}
         class="text-green-900 bg-sand-200 font-bold py-4 cursor-pointer w-full sm:w-4/12 px-4 mx-auto text-center rounded-sm block">
-        Rejoindre le mouvement
+        <OpenModalBtnText />
       </li>
     </ul>
   </nav>

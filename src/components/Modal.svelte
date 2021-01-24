@@ -55,8 +55,6 @@
 
     setSubmitting(false);
   }
-
-  $: console.log(state);
 </script>
 
 <style>
@@ -68,7 +66,7 @@
 <div class="fixed inset-0 z-40 flex items-center justify-center">
   <section
     class="mx-auto max-w-4xl p-8 py-16 rounded-sm bg-sand-100 h-full overflow-auto sm:h-auto relative z-50 flex-1">
-    <div class="mx-auto max-w-lg">
+    <div class="mx-auto max-w-xl">
       {#if state.hasSubmitted && !state.hasFormError}
         <div>
           <h2 class="text-xl font-bold mb-4 sm:text-2xl sm:text-center">
@@ -88,9 +86,15 @@
 
             <p class="mb-8 text-sm sm:text-base sm:text-center">
               Le soutien des citoyens est la première étape pour l'introduction
-              d'une taxe climatique en France et dans le monde. Montrez votre
-              soutien publiquement pour aider les politiques à prendre
-              conscience de l'ampleur de cette demande.
+              d'une taxe climatique en France et dans le monde.
+              <br />
+              Grace à votre email, nous allons pouvoir peser dans la balance
+              lors de nos discussions avec des politiques en montrant le nombre
+              de soutiens.
+              <br />
+              Nous allons occasionellement vous envoyer des newsletters. Pas de
+              spam (promis!), et vous gardez la possibilité de vous désincrire à
+              tout moment.
             </p>
 
             {#if state.hasFormError}
@@ -101,11 +105,18 @@
               </div>
             {/if}
 
-            <div class="text-center mb-10">
-              <FormField
-                classes="w-full sm:w-1/2 sm:mx-2"
-                name="email"
-                label="Votre email" />
+            <div class="text-center mb-10 flex flex-col justify-center">
+              <FormField name="email">Votre email</FormField>
+
+              <FormField type="checkbox" name="gdpr">
+                J'ai lu et j'accepte
+                <a
+                  class="underline"
+                  href="/privacy-policy"
+                  on:click={onOutClick}>
+                  la politique de confidentialité
+                </a>
+              </FormField>
             </div>
 
             {#if isSubmitting}
