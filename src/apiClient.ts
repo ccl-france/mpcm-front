@@ -20,3 +20,7 @@ export async function fetchHome() {
 export async function fetchSupporters() {
   return await fetchApiEndpoint("/supporters");
 }
+
+export async function fetchThePlan() {
+  return await fetchApiEndpoint("/the-plan");
+}

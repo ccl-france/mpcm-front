@@ -49,6 +49,12 @@ export interface Supporters extends CreatedUpdatedInfos {
   seo: Seo;
 }
 
+export interface ThePlan extends CreatedUpdatedInfos {
+  hiw: HowItWorks;
+  plan: string;
+  seo: Seo;
+}
+
 // Strapi components
 export interface Link {
   href: string;
