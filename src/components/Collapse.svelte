@@ -18,6 +18,7 @@
     min-height: 24px;
     width: 24px;
     height: 24px;
+    fill: theme("colors.green.500");
   }
 </style>
 
