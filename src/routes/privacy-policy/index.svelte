@@ -4,6 +4,11 @@
   }
 </style>
 
+<svelte:head>
+  <title>Politique de confidentialité · Le meilleur plan climat du monde</title>
+  <meta name="description" content="Politique de confidentialité" />
+</svelte:head>
+
 <section class="pt-32 w-full max-w-4xl mx-auto py-16 sm:pb-32 px-6">
   <div class="max-w-2xl">
     <h1 class="text-2xl my-6 font-bold">Politique de confidentialité</h1>

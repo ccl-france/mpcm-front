@@ -140,8 +140,7 @@
         Je représente une association
       </h2>
       <p class="mb-3 text-sm sm:text-base sm:mb-8 sm:text-center">
-        Contactez nous à l'addresse lemeilleurplanclimatdumonde@gmail.com pour
-        en discuter.
+        Contactez nous à l'addresse ccl.fra.paris@gmail.com pour en discuter.
       </p>
 
       <button

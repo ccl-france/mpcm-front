@@ -24,15 +24,13 @@
           Citizen&apos;s Climate Lobby
         </a>
         <a class={linkStyle} href="https://ccl-france.org/" target="blank">
-          Citizen&apos;s Climate Lobby France
+          Citizen's Climate Lobby France
         </a>
       </div>
       <div class="md:w-1/3 m-8">
-        <!-- <a
-          class={linkStyle}
-          href="mailto:lemeilleurplanclimatdumonde@gmail.com">
-          lemeilleurplanclimatdumonde@gmail.com
-        </a> -->
+        <a class={linkStyle} href="mailto:ccl.fra.paris@gmail.com">
+          ccl.fra.paris@gmail.com
+        </a>
       </div>
     </div>
     <p class="text-sm text-center mt-6">
