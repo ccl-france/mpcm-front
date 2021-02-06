@@ -6,7 +6,7 @@
 </script>
 
 <div class="flex flex-col-reverse sm:flex-row sm:items-center sm:px-8 lg:px-32">
-  <div class="sm:w-1/2 sm:mr-8 lg:mr-8 xl:mr-16 text-center">
+  <div class="sm:w-1/2 sm:mr-8 lg:mr-8 xl:mr-16 text-center py-4">
     {#each supportedBy.organizations as org}
       <a
         class="inline-block md:w-1/2 p-2 xl:p-4"
