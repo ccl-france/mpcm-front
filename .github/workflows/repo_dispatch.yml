@@ -1,0 +1,80 @@
+name: Build, test, deploy
+
+on:
+  repository_dispatch:
+    types: build
+  push:
+    branches:
+      - master
+
+jobs:
+  build:
+    name: Build website
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v2
+
+      - name: Set Node.JS version
+        uses: actions/setup-node@v1
+        with:
+          node-version: "12"
+
+      - name: Install deps
+        run: npm ci
+
+      - name: Export
+        run: npm run export
+
+      - name: Upload build artifact
+        uses: actions/upload-artifact@v2
+        with:
+          name: build
+          path: __sapper__/export
+
+  test:
+    name: Run HTML/CSS/SEO tests
+    runs-on: ubuntu-latest
+    needs: build
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v2
+
+      - name: Download build
+        uses: actions/download-artifact@v2
+        with:
+          name: build
+          path: build
+
+      - name: Run Lighthouse
+        uses: treosh/lighthouse-ci-action@v3
+        with:
+          configPath: ".lighthouserc.js"
+          temporaryPublicStorage: true
+
+  deploy:
+    name: Deploy to GH pages
+    runs-on: ubuntu-latest
+    needs: test
+    steps:
+      - name: Download build
+        uses: actions/download-artifact@v2
+        with:
+          name: build
+          path: build
+
+      - name: Deploy
+        uses: peaceiris/actions-gh-pages@v3
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_dir: ./build
+
+  cleanup:
+    name: Clean artifacts
+    needs: deploy
+    runs-on: ubuntu-latest
+    steps:
+      - name: Delete build
+        uses: geekyeggo/delete-artifact@v1
+        with:
+          name: build

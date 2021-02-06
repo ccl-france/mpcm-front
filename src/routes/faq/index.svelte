@@ -28,28 +28,5 @@
     {#each faq.qas as qa}
       <Collapse title={qa.question} text={qa.answer} />
     {/each}
-    <!-- <Collapse
-      accordion
-      class="bg-transparent border-0 text-green-900"
-      expandIcon={({ isActive }) =>
-        isActive ? (
-          <FaChevronCircleUp class="mr-4 flex-none text-green-500 text-2xl" />
-        ) : (
-          <FaChevronCircleDown class="mr-4 flex-none text-green-500 text-2xl" />
-        )
-      }
-    >
-      {faq.map(([question, answer]) => (
-        <Panel
-          key={question}
-          header={question}
-          headerClass="flex items-center py-4 cursor-pointer"
-        >
-          {answer.split('\n').map((paragraph, i) => (
-            <P key={i}>{paragraph}</P>
-          ))}
-        </Panel>
-      ))}
-    </Collapse> -->
   </div>
 </section>

@@ -4,8 +4,10 @@ import FaTwitterSquare from "svelte-icons/fa/FaTwitterSquare.svelte";
 import FaEnvelope from "svelte-icons/fa/FaEnvelope.svelte";
 
 export const siteUrl = "https://lemeilleurplanclimatdumonde.fr";
-//export const apiUrl = "https://api.lemeilleurplanclimatdumonde.fr";
-export const apiUrl = "http://localhost:1337"; // TODO store in env?
+export const apiUrl =
+  process.env.NODE_ENV === "production"
+    ? "https://api.lemeilleurplanclimatdumonde.fr"
+    : "http://localhost:1337";
 
 export const pages = [
   ["/", "Accueil"],
