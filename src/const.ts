@@ -12,7 +12,6 @@ export const pages = [
   ["/supporters", "Ils nous soutiennent"],
   ["/the-plan", "Le plan"],
   ["/faq", "Des questions ?"],
-  ["/about-us", "A propos"],
 ];
 
 export const shareButtons = [

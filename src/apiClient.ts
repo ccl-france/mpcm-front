@@ -24,3 +24,7 @@ export async function fetchSupporters() {
 export async function fetchThePlan() {
   return await fetchApiEndpoint("/the-plan");
 }
+
+export async function fetchFAQ() {
+  return await fetchApiEndpoint("/faq");
+}

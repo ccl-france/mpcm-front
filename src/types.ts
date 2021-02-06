@@ -32,8 +32,12 @@ export interface CreatedUpdatedInfos {
   updated_by: User;
 }
 
+export interface HasSeo {
+  seo: Seo;
+}
+
 // Strapi pages
-export interface Home extends CreatedUpdatedInfos {
+export interface Home extends CreatedUpdatedInfos, HasSeo {
   title: string;
   subtitle: string;
   manifesto: string;
@@ -41,18 +45,19 @@ export interface Home extends CreatedUpdatedInfos {
   hiw: HowItWorks;
   supportedBy: SupportedBy;
   mentionedIn: MentionedIn;
-  seo: Seo;
 }
 
-export interface Supporters extends CreatedUpdatedInfos {
+export interface Supporters extends CreatedUpdatedInfos, HasSeo {
   supportedBy: SupportedBy;
-  seo: Seo;
 }
 
-export interface ThePlan extends CreatedUpdatedInfos {
+export interface ThePlan extends CreatedUpdatedInfos, HasSeo {
   hiw: HowItWorks;
   plan: string;
-  seo: Seo;
+}
+
+export interface FAQ extends CreatedUpdatedInfos, HasSeo {
+  qas: Array<QA>;
 }
 
 // Strapi components
@@ -91,4 +96,9 @@ export interface HowItWorks {
     text: string;
     image: Image;
   }>;
+}
+
+export interface QA {
+  question: string;
+  answer: string;
 }
