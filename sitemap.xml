@@ -1,37 +1,28 @@
 <?xml version="1.0" encoding="UTF-8"?>
-
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-
+    
   <url>
     <loc>https://lemeilleurplanclimatdumonde.fr/</loc>
-    <lastmod>2021-02-06T20:36:05+00:00</lastmod>
-    <priority>1.00</priority>
+    <lastmod>2021-02-08T09:09:44.994Z</lastmod>
+    <priority>1</priority>
   </url>
 
   <url>
-    <loc>https://lemeilleurplanclimatdumonde.fr/supporters/</loc>
-    <lastmod>2021-02-06T20:36:05+00:00</lastmod>
-    <priority>0.80</priority>
+    <loc>https://lemeilleurplanclimatdumonde.fr/supporters</loc>
+    <lastmod>2021-02-08T09:09:54.131Z</lastmod>
+    <priority>0.8</priority>
   </url>
 
   <url>
-    <loc>https://lemeilleurplanclimatdumonde.fr/the-plan/</loc>
-    <lastmod>2021-02-06T20:36:05+00:00</lastmod>
-    <priority>0.80</priority>
+    <loc>https://lemeilleurplanclimatdumonde.fr/the-plan</loc>
+    <lastmod>2021-01-25T22:25:21.753Z</lastmod>
+    <priority>0.8</priority>
   </url>
 
   <url>
-    <loc>https://lemeilleurplanclimatdumonde.fr/faq/</loc>
-    <lastmod>2021-02-06T20:36:05+00:00</lastmod>
-    <priority>0.80</priority>
-  </url>
-
-  <url>
-    <loc>
-    https://lemeilleurplanclimatdumonde.fr/privacy-policy/
-    </loc>
-    <lastmod>2021-02-06T20:36:05+00:00</lastmod>
-    <priority>0.50</priority>
+    <loc>https://lemeilleurplanclimatdumonde.fr/faq</loc>
+    <lastmod>2021-02-06T16:20:17.588Z</lastmod>
+    <priority>0.8</priority>
   </url>
 
 </urlset>
