@@ -8,7 +8,7 @@ const defaultOptions = {
   },
 };
 
-async function fetchApiEndpoint(endpoint: string) {
+export async function fetchApiEndpoint(endpoint: string) {
   const apiRes = await fetch(apiUrl + endpoint, defaultOptions);
   return await apiRes.json();
 }

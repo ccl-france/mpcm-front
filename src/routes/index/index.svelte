@@ -1,5 +1,8 @@
 <script context="module" lang="ts">
   export async function preload({ params }) {
+    // trigger sitemap generation
+    this.fetch("/sitemap.xml");
+
     const res = await this.fetch("/index.json");
     const data = await res.json();
 
