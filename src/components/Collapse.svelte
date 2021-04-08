@@ -36,8 +36,6 @@
 
 {#if isActive}
   <div class="my-4" transition:slide>
-    {#each text.split('\n') as par}
-      <p class="sm:text-lg leading-relaxed my-4">{par}</p>
-    {/each}
+    {@html text}
   </div>
 {/if}
