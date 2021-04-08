@@ -63,13 +63,13 @@
     <ShareButtons />
 
     <div class="transform -mt-64 translate-y-64">
-      <Manifesto text={home.manifesto} button={home.mainButton} />
+      <HowItWorks hiw={home.hiw} />
     </div>
   </div>
 </section>
 
 <section class="pt-16 px-8 mx-auto max-w-3xl">
-  <HowItWorks hiw={home.hiw} />
+  <Manifesto text={home.manifesto} button={home.mainButton} />
 </section>
 
 <section
