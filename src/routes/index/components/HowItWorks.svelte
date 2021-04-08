@@ -9,7 +9,8 @@
   const intro = hiw.intro.replace(re, "<br />");
 </script>
 
-<div class="sm:text-lg">
+<div
+  class="relative bg-sand-100 mt-10 p-10 md:p-20 mx-auto max-w-5xl rounded-sm">
   <h2 class="text-2xl md:text-center font-bold mb-4 mx-auto">{hiw.title}</h2>
   <p class="md:text-center max-w-xl md:mx-auto mb-16">
     {@html intro}

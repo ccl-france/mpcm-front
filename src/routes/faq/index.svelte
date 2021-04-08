@@ -17,6 +17,8 @@
   import Collapse from "../../components/Collapse.svelte";
 
   export let faq: FAQ;
+
+  const qas = faq.qas.sort((a, b) => a.question.localeCompare(b.question));
 </script>
 
 <Seo seo={faq.seo} />
@@ -25,7 +27,7 @@
   <div class="max-w-2xl">
     <h1 class="text-2xl my-6 font-bold">Foire aux questions</h1>
 
-    {#each faq.qas as qa}
+    {#each qas as qa}
       <Collapse title={qa.question} text={qa.answer} />
     {/each}
   </div>

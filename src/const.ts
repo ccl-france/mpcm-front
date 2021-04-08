@@ -12,7 +12,7 @@ export const apiUrl =
 export const pages = [
   ["/", "Accueil"],
   ["/supporters", "Ils nous soutiennent"],
-  ["/the-plan", "Le plan"],
+  // ["/the-plan", "Le plan"],
   ["/faq", "Des questions ?"],
 ];
 

@@ -6,7 +6,7 @@
   export let button: Link;
 </script>
 
-<div class="relative bg-sand-100 p-10 md:p-20 mx-auto max-w-3xl rounded-sm">
+<div class="sm:text-lg">
   {@html text}
   <a href={button.href} target="_blank" rel="noopener noreferrer">
     <Button classes="my-4 md:mb-0">{button.text}</Button>
