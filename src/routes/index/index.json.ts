@@ -1,7 +1,8 @@
 import { Remarkable } from "remarkable";
 
-import type { Home } from "../../types";
-import { fetchHome } from "../../apiClient";
+import type { Home, FAQ } from "../../types";
+import { fetchHome, fetchFAQ } from "../../apiClient";
+import { getFaqParser } from "../faq/index.json";
 
 function getManifestoParser() {
   const manifestoParser = new Remarkable();
@@ -51,10 +52,19 @@ function getMentionedInParser() {
 
 export async function get(req, res, next) {
   const home: Home = await fetchHome();
+  const faq: FAQ = await fetchFAQ();
 
   home.manifesto = getManifestoParser().render(home.manifesto);
   home.supportedBy.text = getSupportedByParser().render(home.supportedBy.text);
   home.mentionedIn.text = getMentionedInParser().render(home.mentionedIn.text);
+
+  const faqParser = getFaqParser();
+  home.qas = faq.qas
+    .filter((qa) => qa.showInHome)
+    .map((qa) => ({
+      ...qa,
+      answer: faqParser.render(qa.answer),
+    }));
 
   res.setHeader("Content-Type", "application/json");
   res.end(JSON.stringify(home));

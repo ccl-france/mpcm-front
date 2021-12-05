@@ -41,10 +41,10 @@ export interface Home extends CreatedUpdatedInfos, HasSeo {
   title: string;
   subtitle: string;
   manifesto: string;
-  mainButton: Link;
   hiw: HowItWorks;
   supportedBy: SupportedBy;
   mentionedIn: MentionedIn;
+  qas: Array<QA>;
 }
 
 export interface Supporters extends CreatedUpdatedInfos, HasSeo {
@@ -101,4 +101,5 @@ export interface HowItWorks {
 export interface QA {
   question: string;
   answer: string;
+  showInHome: boolean;
 }
