@@ -19,7 +19,7 @@ jobs:
         with:
           registry: ghcr.io
           username: ccl-france
-          password: ${{ secrets.GHCR_PAT }}
+          password: ${{ secrets.GITHUB_TOKEN }}
 
       - name: Build and push
         id: docker_build
