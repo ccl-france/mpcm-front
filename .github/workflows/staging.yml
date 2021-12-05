@@ -59,7 +59,7 @@ jobs:
           port: ${{ secrets.DEPLOY_PORT }}
           script: |
             cd /srv/wbcp-front
-            echo ${{ secrets.GHCR_PAT }} | docker login ghcr.io -u ccl-france --password-stdin
+            echo ${{ secrets.GITHUB_TOKEN }} | docker login ghcr.io -u ccl-france --password-stdin
             docker-compose pull
             docker-compose up -d
             docker logout ghcr.io
