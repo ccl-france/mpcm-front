@@ -1,0 +1,13 @@
+name: Redeploy production and staging websites
+
+on:
+  push:
+    branches:
+      - master
+
+jobs:
+  prod:
+    uses: ccl-france/mpcm-front/.github/workflows/prod.yml@master
+
+  staging:
+    uses: ccl-france/mpcm-front/.github/workflows/staging.yml@master
