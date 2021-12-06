@@ -2,14 +2,24 @@ name: Build staging docker image and deploy
 
 on:
   workflow_call:
+    secrets:
+      GITHUB_TOKEN:
+        description: "The GitHub token used to access GHCR"
+        required: true
+      DEPLOY_HOST:
+        description: "The host used for deployment"
+        required: true
+      DEPLOY_USER:
+        description: "The user used for deployment"
+        required: true
+      DEPLOY_KEY:
+        description: "The ssh key used for deployment"
+        required: true
+      DEPLOY_PORT:
+        description: "The ssh port used for deployment"
+        required: true
 
 jobs:
-  dummy:
-    runs-on: ubuntu-latest
-    steps:
-      - name: dummy
-        run: echo ${{ secrets.DEPLOY_PORT }}
-
   build:
     name: Build Docker image and push
     runs-on: ubuntu-latest
