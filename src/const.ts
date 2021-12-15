@@ -4,11 +4,12 @@ import FaTwitterSquare from "svelte-icons/fa/FaTwitterSquare.svelte";
 import FaEnvelope from "svelte-icons/fa/FaEnvelope.svelte";
 
 export const siteUrl = "https://lemeilleurplanclimatdumonde.fr";
-export const apiUrl = process.env.API_URL
-  ? process.env.API_URL
-  : process.env.NODE_ENV === "production"
-  ? "https://api.lemeilleurplanclimatdumonde.fr"
-  : "http://localhost:1337";
+
+export let apiUrl = "https://api.lemeilleurplanclimatdumonde.fr";
+// if process is defined, the website is being built and not served by browser
+if (typeof process !== "undefined" && process.env.API_URL) {
+  apiUrl = process.env.API_URL;
+}
 
 export const pages = [
   ["/", "Accueil"],
