@@ -7,5 +7,3 @@ on:
 jobs:
   prod:
     uses: ccl-france/mpcm-front/.github/workflows/prod.yml@master
-    secrets:
-      GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}

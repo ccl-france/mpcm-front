@@ -14,7 +14,6 @@ jobs:
   staging:
     uses: ccl-france/mpcm-front/.github/workflows/staging.yml@master
     secrets:
-      GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
       DEPLOY_USER: ${{ secrets.DEPLOY_USER }}
       DEPLOY_PORT: ${{ secrets.DEPLOY_PORT }}
       DEPLOY_HOST: ${{ secrets.DEPLOY_HOST }}
