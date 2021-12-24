@@ -1,7 +1,7 @@
-import FaLinkedin from "svelte-icons/fa/FaLinkedin.svelte";
-import FaFacebookSquare from "svelte-icons/fa/FaFacebookSquare.svelte";
-import FaTwitterSquare from "svelte-icons/fa/FaTwitterSquare.svelte";
-import FaEnvelope from "svelte-icons/fa/FaEnvelope.svelte";
+import FaLinkedinIn from "svelte-icons/fa/FaLinkedinIn.svelte";
+import FaFacebook from "svelte-icons/fa/FaFacebook.svelte";
+import FaTwitter from "svelte-icons/fa/FaTwitter.svelte";
+import FaRegEnvelope from "svelte-icons/fa/FaRegEnvelope.svelte";
 
 export const siteUrl = "https://lemeilleurplanclimatdumonde.fr";
 
@@ -21,22 +21,22 @@ export const pages = [
 export const shareButtons = [
   {
     href: "https://www.linkedin.com/shareArticle?mini=true&url=",
-    icon: FaLinkedin,
+    icon: FaLinkedinIn,
     text: "LinkedIn",
   },
   {
     href: "https://www.facebook.com/sharer.php?u=",
-    icon: FaFacebookSquare,
+    icon: FaFacebook,
     text: "Facebook",
   },
   {
     href: "https://twitter.com/share?url=%s&text=Un%20revenu%20climatique%20socialement%20juste,%20",
-    icon: FaTwitterSquare,
+    icon: FaTwitter,
     text: "Twitter",
   },
   {
     href: "mailto:??subject=Proposition citoyenne climatique&body=Bonjour,%0D%0A%0D%0AJe t'invite a regarder cette proposition citoyenne : ",
-    icon: FaEnvelope,
+    icon: FaRegEnvelope,
     text: "E-mail",
   },
 ];

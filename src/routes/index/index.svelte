@@ -41,7 +41,7 @@
       {home.title}
     </h1>
 
-    <p class="max-w-xl mx-auto text-center md:text-xl my-8 text-sand-100">
+    <p class="max-w-xl mx-auto text-center md:text-xl my-6 text-sand-100">
       {home.subtitle}
     </p>
 
@@ -51,9 +51,7 @@
   </div>
 </section>
 
-<ShareButtons />
-
-<section class="pt-4 px-8 mx-auto max-w-3xl">
+<section class="pt-2 lg:pt-4 px-8 mx-auto max-w-3xl">
   <div class="max-w-2xl">
     <h1 class="text-2xl my-6 font-bold">Questions fréquentes</h1>
 
@@ -76,6 +74,8 @@
 <section class="px-8 mx-auto max-w-4xl pt-12">
   <MentionedIn mentionedIn={home.mentionedIn} />
 </section>
+
+<ShareButtons />
 
 <style>
   #bg-image.no-webp {
