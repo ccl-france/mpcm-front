@@ -1,10 +1,10 @@
 <script lang="ts">
-  import Button from "../../../components/Button.svelte";
-  import type { Link } from "../../../types";
+	import Button from '../../../components/Button.svelte';
+	import type { Link } from '../../../types';
 
-  export let text: string;
+	export let text: string;
 </script>
 
 <div class="sm:text-lg">
-  {@html text}
+	{@html text}
 </div>
