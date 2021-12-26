@@ -1,39 +1,40 @@
 <script context="module" lang="ts">
-  export async function preload({ params }) {
-    const res = await this.fetch("/the-plan.json");
-    const data = await res.json();
+	import type { Load } from '@sveltejs/kit';
 
-    if (res.status === 200) {
-      return { thePlan: data };
-    } else {
-      this.error(res.status, data.message);
-    }
-  }
+	export const load: Load = async ({ fetch }) => {
+		const res = await fetch('/the-plan.json');
+		const data = await res.json();
+
+		if (res.status !== 200) {
+			return { status: res.status, error: data.message };
+		}
+
+		return { props: { thePlan: data } };
+	};
 </script>
 
 <script lang="ts">
-  import HowItWorks from "../index/components/HowItWorks.svelte";
-  import Seo from "../../components/Seo.svelte";
-  import type { ThePlan } from "../../types";
+	import HowItWorks from '../../components/index/HowItWorks.svelte';
+	import Seo from '../../components/Seo.svelte';
+	import type { ThePlan } from '../../types';
 
-  export let thePlan: ThePlan;
+	export let thePlan: ThePlan;
 </script>
 
 <Seo seo={thePlan.seo} />
 
 <section class="pt-32 w-full max-w-4xl mx-auto py-16 sm:pb-32 px-6">
-  <div class="max-w-2xl">
-    <div class="text-center mb-4">
-      <a href="the-plan#details" class="text-sm underline">Déjà lu ? Allez plus
-        loin.</a>
-    </div>
+	<div class="max-w-2xl">
+		<div class="text-center mb-4">
+			<a href="the-plan#details" class="text-sm underline">Déjà lu ? Allez plus loin.</a>
+		</div>
 
-    <HowItWorks hiw={thePlan.hiw} />
+		<HowItWorks hiw={thePlan.hiw} />
 
-    <hr class="mx-auto max-w-3xl" />
+		<hr class="mx-auto max-w-3xl" />
 
-    <div id="details">
-      {@html thePlan.plan}
-    </div>
-  </div>
+		<div id="details">
+			{@html thePlan.plan}
+		</div>
+	</div>
 </section>

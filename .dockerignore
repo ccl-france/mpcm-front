@@ -1,3 +1,4 @@
-node_modules
-__sapper__
 .github
+.svelte-kit
+build
+node_modules

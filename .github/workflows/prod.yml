@@ -14,19 +14,19 @@ jobs:
       - name: Set Node.JS version
         uses: actions/setup-node@v1
         with:
-          node-version: "16"
+          node-version: '16'
 
       - name: Install deps
         run: npm ci
 
       - name: Export
-        run: npm run export
+        run: npm run build
 
       - name: Upload build artifact
         uses: actions/upload-artifact@v2
         with:
           name: build
-          path: __sapper__/export
+          path: build
 
   test:
     name: Run HTML/CSS/SEO tests
@@ -45,7 +45,7 @@ jobs:
       - name: Run Lighthouse
         uses: treosh/lighthouse-ci-action@v3
         with:
-          configPath: ".lighthouserc.js"
+          configPath: '.lighthouserc.js'
           temporaryPublicStorage: true
 
   deploy:
