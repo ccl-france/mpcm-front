@@ -1,4 +1,4 @@
-import{S as de,i as me,s as pe,e as s,k as I,t as a,a2 as fe,c as l,d as o,n as C,a as r,g as i,b as d,D as e,f as ce,F as ee}from"../../chunks/vendor-1f173b93.js";function he(ue){let m,R,t,u,f,B,w,h,A,N,P,v,D,T,j,M,S,k,z,H,x,F,O,c,b,W,Y,L,Z,U,E,V,G,y,J,K,Q,X,$;return{c(){m=s("meta"),R=I(),t=s("section"),u=s("div"),f=s("h1"),B=a("Politique de confidentialit\xE9"),w=I(),h=s("h2"),A=a("Identit\xE9 de l'organisme"),N=a(`
+import{S as de,i as me,s as pe,e as s,k as I,t as a,a2 as fe,c as l,d as o,n as C,a as r,g as i,b as d,D as e,f as ce,F as ee}from"../../chunks/vendor-73570837.js";function he(ue){let m,R,t,u,f,B,w,h,A,N,P,v,D,T,j,M,S,k,z,H,x,F,O,c,L,W,Y,b,Z,U,E,V,G,y,J,K,Q,X,$;return{c(){m=s("meta"),R=I(),t=s("section"),u=s("div"),f=s("h1"),B=a("Politique de confidentialit\xE9"),w=I(),h=s("h2"),A=a("Identit\xE9 de l'organisme"),N=a(`
 		Le meilleur plan climat du monde est un collectif repr\xE9sentant un ensemble d'associations loi 1901.
 		Ce collectif est repr\xE9sent\xE9 par l'association CITIZENS'CLIMATE LOBBY FRANCE (RNA W751253513), localis\xE9e
 		au 22 rue Myrha, 75018 Paris.`),P=I(),v=s("h2"),D=a("Donn\xE9es collect\xE9es et finalit\xE9s"),T=a(`
@@ -16,7 +16,7 @@ import{S as de,i as me,s as pe,e as s,k as I,t as a,a2 as fe,c as l,d as o,n as 
 	`),x=s("h2"),F=a("Droits de l'utilisateur"),O=a(`
 	L'utilisateur \xE0 le droit de :
 
-	`),c=s("ul"),b=s("li"),W=a("r\xE9tracter son consentement et ainsi demander la suppression des donn\xE9es personnelles ;"),Y=I(),L=s("li"),Z=a("acc\xE9der aux donn\xE9es le concernant ;"),U=I(),E=s("li"),V=a("faire rectifier les donn\xE9es le concernant ;"),G=a(`
+	`),c=s("ul"),L=s("li"),W=a("r\xE9tracter son consentement et ainsi demander la suppression des donn\xE9es personnelles ;"),Y=I(),b=s("li"),Z=a("acc\xE9der aux donn\xE9es le concernant ;"),U=I(),E=s("li"),V=a("faire rectifier les donn\xE9es le concernant ;"),G=a(`
 
 	Pour ce faire, il faudra contacter
 	`),y=s("b"),J=a("ccl.fra.paris@gmail.com"),K=a(`
@@ -43,7 +43,7 @@ import{S as de,i as me,s as pe,e as s,k as I,t as a,a2 as fe,c as l,d as o,n as 
 	`),x=l(n,"H2",{class:!0});var le=r(x);F=i(le,"Droits de l'utilisateur"),le.forEach(o),O=i(n,`
 	L'utilisateur \xE0 le droit de :
 
-	`),c=l(n,"UL",{class:!0});var _=r(c);b=l(_,"LI",{});var ae=r(b);W=i(ae,"r\xE9tracter son consentement et ainsi demander la suppression des donn\xE9es personnelles ;"),ae.forEach(o),Y=C(_),L=l(_,"LI",{});var ie=r(L);Z=i(ie,"acc\xE9der aux donn\xE9es le concernant ;"),ie.forEach(o),U=C(_),E=l(_,"LI",{});var oe=r(E);V=i(oe,"faire rectifier les donn\xE9es le concernant ;"),oe.forEach(o),_.forEach(o),G=i(n,`
+	`),c=l(n,"UL",{class:!0});var _=r(c);L=l(_,"LI",{});var ae=r(L);W=i(ae,"r\xE9tracter son consentement et ainsi demander la suppression des donn\xE9es personnelles ;"),ae.forEach(o),Y=C(_),b=l(_,"LI",{});var ie=r(b);Z=i(ie,"acc\xE9der aux donn\xE9es le concernant ;"),ie.forEach(o),U=C(_),E=l(_,"LI",{});var oe=r(E);V=i(oe,"faire rectifier les donn\xE9es le concernant ;"),oe.forEach(o),_.forEach(o),G=i(n,`
 
 	Pour ce faire, il faudra contacter
 	`),y=l(n,"B",{});var re=r(y);J=i(re,"ccl.fra.paris@gmail.com"),re.forEach(o),K=i(n,`
@@ -52,4 +52,4 @@ import{S as de,i as me,s as pe,e as s,k as I,t as a,a2 as fe,c as l,d as o,n as 
 	`),Q=l(n,"BR",{}),X=l(n,"BR",{}),$=i(n,`
 	L'utilisateur \xE0 \xE9galement le droit d'introduire une r\xE9clamation aupr\xE8s de la CNIL dans le cas ou la
 	r\xE9ponse apport\xE9e par Le meilleur plan climat du monde n'est pas satisfaisante ou n'est pas dans les
-	d\xE9lais sp\xE9cifi\xE9s par la loi.`),n.forEach(o),this.h()},h(){document.title="Politique de confidentialit\xE9 \xB7 Le meilleur plan climat du monde",d(m,"name","description"),d(m,"content","Politique de confidentialit\xE9"),d(f,"class","text-2xl my-6 font-bold"),d(h,"class","text-xl my-6 font-bold"),d(u,"class","max-w-2xl"),d(v,"class","text-xl my-6 font-bold"),d(x,"class","text-xl my-6 font-bold"),d(c,"class","rights list-disc mx-auto my-4 svelte-zzbwws"),d(t,"class","pt-32 w-full max-w-4xl mx-auto py-16 sm:pb-32 px-6")},m(p,g){e(document.head,m),ce(p,R,g),ce(p,t,g),e(t,u),e(u,f),e(f,B),e(u,w),e(u,h),e(h,A),e(u,N),e(t,P),e(t,v),e(v,D),e(t,T),e(t,j),e(t,M),e(t,S),e(t,k),e(t,z),e(t,H),e(t,x),e(x,F),e(t,O),e(t,c),e(c,b),e(b,W),e(c,Y),e(c,L),e(L,Z),e(c,U),e(c,E),e(E,V),e(t,G),e(t,y),e(y,J),e(t,K),e(t,Q),e(t,X),e(t,$)},p:ee,i:ee,o:ee,d(p){o(m),p&&o(R),p&&o(t)}}}class xe extends de{constructor(m){super();me(this,m,null,he,pe,{})}}export{xe as default};
+	d\xE9lais sp\xE9cifi\xE9s par la loi.`),n.forEach(o),this.h()},h(){document.title="Politique de confidentialit\xE9 \xB7 Le meilleur plan climat du monde",d(m,"name","description"),d(m,"content","Politique de confidentialit\xE9"),d(f,"class","text-2xl my-6 font-bold"),d(h,"class","text-xl my-6 font-bold"),d(u,"class","max-w-2xl"),d(v,"class","text-xl my-6 font-bold"),d(x,"class","text-xl my-6 font-bold"),d(c,"class","rights list-disc mx-auto my-4 svelte-zzbwws"),d(t,"class","pt-32 w-full max-w-4xl mx-auto py-16 sm:pb-32 px-6")},m(p,g){e(document.head,m),ce(p,R,g),ce(p,t,g),e(t,u),e(u,f),e(f,B),e(u,w),e(u,h),e(h,A),e(u,N),e(t,P),e(t,v),e(v,D),e(t,T),e(t,j),e(t,M),e(t,S),e(t,k),e(t,z),e(t,H),e(t,x),e(x,F),e(t,O),e(t,c),e(c,L),e(L,W),e(c,Y),e(c,b),e(b,Z),e(c,U),e(c,E),e(E,V),e(t,G),e(t,y),e(y,J),e(t,K),e(t,Q),e(t,X),e(t,$)},p:ee,i:ee,o:ee,d(p){o(m),p&&o(R),p&&o(t)}}}class xe extends de{constructor(m){super();me(this,m,null,he,pe,{})}}export{xe as default};
