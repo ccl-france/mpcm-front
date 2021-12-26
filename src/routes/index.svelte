@@ -27,12 +27,24 @@
 	import type { Home } from '../types';
 
 	export let home: Home;
+
+	let webpClass = 'has-webp';
+	function onWebpError() {
+		webpClass = 'no-webp';
+	}
 </script>
+
+<img
+	style="display: none"
+	src="/webp_support.webp"
+	alt="WebP support detection"
+	onerror={onWebpError}
+/>
 
 <Seo seo={home.seo} />
 
 <!-- TODO: Write WEBP support detection -->
-<section class="pt-24 relative mb-64 bg-cover bg-green-900 has-webp" id="bg-image">
+<section class="pt-24 relative mb-64 bg-cover bg-green-900 {webpClass}" id="bg-image">
 	<div class="relative mx-auto p-8">
 		<h1
 			class="text-center max-w-4xl mx-auto text-xl sm:text-2xl md:text-4xl font-bold text-sand-100 leading-none"

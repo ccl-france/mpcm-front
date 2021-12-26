@@ -12,7 +12,13 @@
 		{#each hiw.steps as step, i}
 			<div class="mb-12 sm:flex sm:flex-col sm:items-center">
 				<div>
-					<Image src={step.image.url} alt={step.image.alternativeText} width={312} height={150} />
+					<Image
+						src={step.image.url}
+						alt={step.image.alternativeText}
+						width={312}
+						height={150}
+						loading={i === 0 ? 'eager' : 'lazy'}
+					/>
 				</div>
 				<div>
 					<div class="flex items-center mb-2 text-lg font-semibold">

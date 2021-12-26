@@ -7,8 +7,9 @@
 
 	export let width: number;
 	export let height: number;
+	export let loading: HTMLImageElement['loading'] = 'lazy';
 
 	src = apiUrl + src;
 </script>
 
-<img {src} {alt} {width} {height} class={classes} loading="lazy" />
+<img {src} {alt} {width} {height} class={classes} {loading} />
