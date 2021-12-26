@@ -38,6 +38,8 @@
 	style="display: none"
 	src="/webp_support.webp"
 	alt="WebP support detection"
+	height="1"
+	width="1"
 	onerror={onWebpError}
 />
 
