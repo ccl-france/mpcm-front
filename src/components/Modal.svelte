@@ -30,7 +30,7 @@
 
 	function isEmailValid(): boolean {
 		formState = 'idle';
-		errors = { ...errors, email: undefined };
+		errors.email = undefined;
 
 		if (!values.email) {
 			errors.email = 'Votre email est obligatoire';
@@ -46,7 +46,7 @@
 
 	function isPrivacyPolicyValid(): boolean {
 		formState = 'idle';
-		errors = { ...errors, privacyPolicy: undefined };
+		errors.privacyPolicy = undefined;
 
 		if (!values.privacyPolicy) {
 			errors.privacyPolicy = 'Cette case est obligatoire';
