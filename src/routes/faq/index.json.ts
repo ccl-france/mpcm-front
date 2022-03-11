@@ -19,10 +19,12 @@ export const get: RequestHandler = async ({ params }) => {
 	const faq: FAQ = await fetchFAQ();
 
 	const parser = getFaqParser();
-	faq.qas = faq.qas.map((qa) => ({
-		...qa,
-		answer: parser.render(qa.answer)
-	}));
+	faq.qas = faq.qas
+		.filter((qa) => qa.showInFaq)
+		.map((qa) => ({
+			...qa,
+			answer: parser.render(qa.answer)
+		}));
 
 	return {
 		status: 200,

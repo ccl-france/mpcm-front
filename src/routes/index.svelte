@@ -55,7 +55,7 @@
 		</h1>
 
 		<p class="max-w-xl mx-auto text-center md:text-xl my-6 text-sand-100">
-			{home.subtitle}
+			{@html home.subtitle}
 		</p>
 
 		<div class="transform -mt-64 translate-y-64">

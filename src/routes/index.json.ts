@@ -46,10 +46,21 @@ function getMentionedInParser() {
 	return mentionedInParser;
 }
 
+function getSubtitleParser() {
+	const subtitleParser = new Remarkable();
+
+	subtitleParser.renderer.rules.paragraph_open = () => '<p class="text-center">';
+	subtitleParser.renderer.rules.link_open = (tokens: any[], idx: number) =>
+		`<a class="underline" target="_blank" href="${tokens[idx].href}">`;
+
+	return subtitleParser;
+}
+
 export const get: RequestHandler = async ({ params }) => {
 	const home: Home = await fetchHome();
 	const faq: FAQ = await fetchFAQ();
 
+	home.subtitle = getSubtitleParser().render(home.subtitle);
 	home.manifesto = getManifestoParser().render(home.manifesto);
 	home.supportedBy.text = getSupportedByParser().render(home.supportedBy.text);
 	home.mentionedIn.text = getMentionedInParser().render(home.mentionedIn.text);

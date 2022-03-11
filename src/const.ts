@@ -1,4 +1,4 @@
-import { mode } from '$app/env';
+import { dev } from '$app/env';
 import FaLinkedinIn from 'svelte-icons/fa/FaLinkedinIn.svelte';
 import FaFacebook from 'svelte-icons/fa/FaFacebook.svelte';
 import FaTwitter from 'svelte-icons/fa/FaTwitter.svelte';
@@ -7,8 +7,12 @@ import FaRegEnvelope from 'svelte-icons/fa/FaRegEnvelope.svelte';
 export const siteUrl = 'https://lemeilleurplanclimatdumonde.fr';
 
 export let apiUrl = 'https://api.lemeilleurplanclimatdumonde.fr';
-if (mode === 'dev') {
-	apiUrl = 'http://localhost:1337';
+if (dev) {
+	fetch('http://localhost:1337')
+		.then(() => (apiUrl = 'http://localhost:1337'))
+		.catch(() =>
+			console.log("The API is not running on port 1337, fallbacking to production's API")
+		);
 }
 
 export const pages = [

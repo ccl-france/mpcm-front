@@ -102,4 +102,5 @@ export interface QA {
 	question: string;
 	answer: string;
 	showInHome: boolean;
+	showInFaq: boolean;
 }
