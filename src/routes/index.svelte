@@ -49,7 +49,7 @@
 <section class="pt-24 relative mb-64 bg-cover bg-green-900 {webpClass}" id="bg-image">
 	<div class="relative mx-auto p-8">
 		<h1
-			class="text-center max-w-4xl mx-auto text-xl sm:text-2xl md:text-4xl font-bold text-sand-100 leading-none"
+			class="text-center max-w-4xl mx-auto text-xl sm:text-3xl md:text-4xl lg:text-5xl font-bold text-sand-100 leading-none"
 		>
 			{home.title}
 		</h1>

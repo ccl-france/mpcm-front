@@ -21,10 +21,10 @@
 					/>
 				</div>
 				<div>
-					<div class="flex items-center mb-2 text-lg font-semibold">
+					<p class="mb-2 text-lg lg:text-xl font-semibold text-center">
 						{step.label}
-					</div>
-					<p>{step.text}</p>
+					</p>
+					<p class="text-center">{step.text}</p>
 				</div>
 			</div>
 		{/each}

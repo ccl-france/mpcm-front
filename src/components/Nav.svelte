@@ -58,7 +58,7 @@
 		</picture>
 	</a>
 
-	<ul class="hidden lg:flex">
+	<ul class="hidden list-none m-0 p-0 lg:flex">
 		{#each pages as page}
 			<li>
 				<NavElement {segment} {page} on:click={onNavClick} />

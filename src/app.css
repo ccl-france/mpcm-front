@@ -2,9 +2,20 @@
 @tailwind components;
 @tailwind utilities;
 
+ul,
+ol,
+menu {
+	@apply list-disc;
+	@apply pl-6;
+}
+
 body {
 	font-family: 'Space Grotesk', sans-serif;
 	@apply text-green-900;
+}
+
+p {
+	@apply text-justify;
 }
 
 .menu-item {

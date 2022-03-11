@@ -82,7 +82,7 @@
 	}
 </script>
 
-<div class="absolute inset-0 z-40 flex items-center justify-center">
+<div class="fixed inset-0 z-40 flex items-center justify-center">
 	<section
 		class="mx-auto max-w-4xl p-8 py-16 rounded-sm bg-sand-100 h-full overflow-auto sm:h-auto relative z-50 flex-1"
 	>
@@ -187,7 +187,7 @@
 		</div>
 	</section>
 
-	<div on:click={onOutClick} class="absolute inset-0 bg-green-900 opacity-50 cursor-pointer" />
+	<div on:click={onOutClick} class="fixed inset-0 bg-green-900 opacity-50 cursor-pointer" />
 </div>
 
 <style>
