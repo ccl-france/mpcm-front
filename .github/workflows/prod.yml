@@ -43,7 +43,7 @@ jobs:
           path: build
 
       - name: Run Lighthouse
-        uses: treosh/lighthouse-ci-action@v3
+        uses: treosh/lighthouse-ci-action@v9
         with:
           configPath: '.lighthouserc.js'
           temporaryPublicStorage: true
